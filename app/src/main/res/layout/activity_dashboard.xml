@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:menu="@menu/dashboard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:text="Expense Structure"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:id="@+id/piechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="25dp"
+                    android:visibility="visible" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingBottom="0dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="0dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="162dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="2dp"
+                        android:text="Expenses"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$10"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview1"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Health"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/thealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$18"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview2"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travel"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/ttravel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$28"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview3"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loans"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tloans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$0"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview4"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bills"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tbills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$0"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview5"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Education"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/teducation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$0"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview6"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview6">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recreation"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/trecreation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$0"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview7"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview7">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Housing"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/thousing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$0"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="@+id/cardview8"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Miscellaneous"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tmisc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="$4"
+                            android:textSize="30sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardexpense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:onClick="showexpenses"
+                        app:cardElevation="5dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cardview9">
+
+                        <TextView
+                            android:id="@+id/showexpense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Show more"
+                            android:textColor="#ff09ff17"
+                            android:textSize="24sp" />
+                    </android.support.v7.widget.CardView>
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView3"
+                    app:layout_constraintStart_toEndOf="@+id/textView3">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="162dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="208dp"
+                        android:elevation="2dp"
+                        android:text="Spendings"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/sincome"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.449" />
+
+                    <TextView
+                        android:id="@+id/sexpense"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.449" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="showincome"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                        <TextView
+                            android:id="@+id/showincome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text=" Show more"
+                            android:textColor="#ff09ff17"
+                            android:textSize="24sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/ssavings"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView"
+                        app:layout_constraintEnd_toStartOf="@+id/sexpense"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/sincome" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/addbutton"
+        style="@style/Button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gradient_button"
+        android:cropToPadding="true"
+        android:elevation="20dp"
+        android:onClick="enterdata"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addicon1"
+        app:useCompatPadding="true" />
+
+</RelativeLayout>

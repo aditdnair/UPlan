@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460953053165",
+    "firebase_url": "https://uplan-292ca.firebaseio.com",
+    "project_id": "uplan-292ca",
+    "storage_bucket": "uplan-292ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460953053165:android:0be06ee2f55955b4",
+        "android_client_info": {
+          "package_name": "aditdnair.uplan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460953053165-hkpv82024hhr22mvvv42v2a0v8f7hpsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aditdnair.uplan",
+            "certificate_hash": "82edfd0a62d2c7ed8a3502404514b7e7670bdaee"
+          }
+        },
+        {
+          "client_id": "460953053165-759ffft13bvkjqvpktl57irffroekq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAK2VdOI3T-6LTqUQdWWJ10sMxkXRP7ok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460953053165-759ffft13bvkjqvpktl57irffroekq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

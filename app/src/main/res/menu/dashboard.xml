@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="aditdnair.uplan.Dashboard">
+
+    <item
+        android:id="@+id/settings_button"
+        android:elevation="10dp"
+        android:iconTint="#ff232323"
+        android:title="Settings"
+        app:showAsAction="always" />
+</menu>

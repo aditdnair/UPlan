@@ -422,12 +422,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         float d1,d2;
         d1=income();
         d2=expenses1();
-        if(d1>d2) {
-            float d3 = d1 - d2;
-            return d3; //savings
-        }
-        else
-            return 0;
+        float d3 = d1 - d2;
+        return d3; //savings
     }
 
     public float food(){

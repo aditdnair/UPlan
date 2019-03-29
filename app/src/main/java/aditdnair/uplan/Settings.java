@@ -8,25 +8,38 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static aditdnair.uplan.Dashboard.dash;
 
-public class Settings extends Activity {
+public class Settings extends Activity  {
     DatabaseHelper db;
-    public Settings settings;
+    Settings settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        db = new DatabaseHelper(this);
-        Button out = findViewById(R.id.signout);
 
+        db = new DatabaseHelper(this);
         settings = this;
+        getgoal();
+    }
+
+    public void getgoal(){
 
     }
 

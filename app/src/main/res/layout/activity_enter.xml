@@ -59,17 +59,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
 
-            <EditText
-                android:id="@+id/category"
+            <Spinner
+                android:id="@+id/spin_category"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:layout_marginBottom="8dp"
-                android:ems="10"
-                android:hint="Enter Category"
-                android:inputType="textPersonName"
                 app:layout_constraintBottom_toTopOf="@+id/add"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -97,7 +91,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Enter Date:"
                 android:textAlignment="center"
-                android:textColor="#09ff17"
+                android:textColor="#232323"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -109,10 +103,11 @@
                 android:layout_height="41dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:textAlignment="center"
-                android:textSize="20sp"
                 android:clickable="true"
                 android:onClick="pick"
+                android:textAlignment="center"
+                android:textColor="#09ff17"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

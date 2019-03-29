@@ -38,6 +38,7 @@ public class Date extends Activity {
 
     public void pickd(View view){
         enter.displayd();
+        super.onBackPressed();
     }
 
     @Override

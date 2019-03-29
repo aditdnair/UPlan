@@ -88,7 +88,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Date" android:theme="@style/Transparent">
+        <activity
+            android:name=".Date"
+            android:theme="@style/Transparent">
             <intent-filter>
                 <action android:name="aditdnair.uplan.Date" />
 

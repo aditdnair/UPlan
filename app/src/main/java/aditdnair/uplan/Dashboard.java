@@ -38,9 +38,11 @@ import lecho.lib.hellocharts.model.PieChartData;
 import lecho.lib.hellocharts.model.SliceValue;
 import lecho.lib.hellocharts.view.PieChartView;
 
+
 public class Dashboard extends Activity {
     DatabaseHelper db;
-    public static String currency = "INR";
+
+    String currency = "INR";
 
     Date date = new Date();
     SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/YYYY");
@@ -141,6 +143,11 @@ public class Dashboard extends Activity {
 
         TextView sav = findViewById(R.id.ssavings);
         sav.setText("Savings: "+currency+String.valueOf(diff));
+        if(diff<0){
+            sav.setTextColor(Color.parseColor("#ff0000"));
+        }
+        else
+            sav.setTextColor(Color.parseColor("#09ff17"));
 
         PieChartView pieChartView = findViewById(R.id.piechart);
         pie_chart(pieChartView);
@@ -170,14 +177,23 @@ public class Dashboard extends Activity {
 
         List pieData = new ArrayList<>();
 
+        if(dfood != 0)
         pieData.add(new SliceValue(dfood, Color.parseColor("#09ff17")).setLabel("Food"));
+        if(dhealth != 0)
         pieData.add(new SliceValue(dhealth, Color.parseColor("#00ffff")).setLabel("Health"));
+        if(deducation != 0)
         pieData.add(new SliceValue(deducation, Color.parseColor("#00aaff")).setLabel("Education"));
+        if(dloans != 0)
         pieData.add(new SliceValue(dloans, Color.parseColor("#995bcc")).setLabel("Loans"));
+        if(dbills != 0)
         pieData.add(new SliceValue(dbills, Color.parseColor("#ee00ee")).setLabel("Bills"));
+        if(drecreation != 0)
         pieData.add(new SliceValue(drecreation, Color.parseColor("#ff0000")).setLabel("Recreation"));
+        if(dhousing != 0)
         pieData.add(new SliceValue(dhousing, Color.parseColor("#ffaa00")).setLabel("Housing"));
+        if(dtravel != 0)
         pieData.add(new SliceValue(dtravel, Color.parseColor("#ffff00")).setLabel("Travel"));
+        if(dmisc != 0)
         pieData.add(new SliceValue(dmisc, Color.parseColor("#555555")).setLabel("Misc"));
 
 

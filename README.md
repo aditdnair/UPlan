@@ -1,3 +1,4 @@
+![Logo](/screenshots/logo.jpeg)
 # UPlan 
 
 UPlan is an application which makes financial planning easier and convenient by enabling people to keep track of their expenses.

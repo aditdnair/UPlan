@@ -1,6 +1,13 @@
 # UPlan 
 
-UPlan is an application which makes financial planning easier and convenient while enabling people to keep track of their expenses.
+UPlan is an application which makes financial planning easier and convenient by enabling people to keep track of their expenses.
+
+## Contributors
+
+1. Adit Nair (@aditdnair)
+2. Aditya Nair (@adityabnair)
+3. Christopher Paralkar (@CPwalker1)
+4. Ashmika Saraf
 
 ## Screenshots
 
